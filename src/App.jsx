@@ -28,7 +28,7 @@ function App() {
   
   return (
     <div className="bg-slate-600 h-screen w-full flex flex-col justify-center items-center ">
-    <div className="flex flex-col justify-center items-center h-1/2 w-1/2 max-sm:w-[90%] max-sm:h-[40%] bg-slate-300 rounded-3xl shadow-black shadow-2xl  ">
+    <div className="flex flex-col justify-center items-center h-1/2 w-1/2 max-sm:w-[90%] max-sm:h-[80%] bg-slate-300 rounded-3xl shadow-black shadow-2xl  ">
       <Step
         title="Step:"
         initialValue={step}
