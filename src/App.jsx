@@ -43,8 +43,8 @@ function App() {
         decrease={decreaseCount}
       />
       {/* date */}
-      <h2 className="text-3xl font-bold mt-10 text-center px-10">
-  {count} day(s) from today is:    
+      <h2 className="text-3xl max-sm:text-2xl font-bold mt-10 text-center px-1">
+  {count} day(s) from today is:  <br />   
   <span className="text-blue-600 font-semibold">
     {dayOfWeek[futureDate.getDay()]} {monthOfYear[futureDate.getMonth()]} {futureDate.getDate()}, {futureDate.getFullYear()}
   </span>
@@ -59,11 +59,11 @@ export default App;
 
 export function Step({ title, initialValue, increase, decrease }) {
   return (
-    <div className="flex items-center space-x-4">
+    <div className="flex items-center space-x-2 justify-between w-full px-10 max-sm:w-full max-sm:flex max-sm:justify-between max-sm:px-2   ">
       <button onClick={decrease} className="px-4 py-2 bg-red-500 text-white font-bold rounded hover:bg-red-700">
         -
       </button>
-      <h1 className="text-6xl font-bold text-center ">
+      <h1 className="text-5xl font-bold text-center ">
         {title} {initialValue}
       </h1>
       <button onClick={increase} className="px-4 py-2 bg-green-500 text-white font-bold rounded hover:bg-green-700">
